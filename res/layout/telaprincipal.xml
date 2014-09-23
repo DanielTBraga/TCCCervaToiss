@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <ImageButton
+                    android:id="@+id/btAddValor"
+                    android:src="@drawable/addvalor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android_weight="1"
+                    android:onClick="onClickBtAddValor"
+
+                    />
+    <ImageButton android:id="@+id/btAddCerveja"
+                    android:src="@drawable/addcerveja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android_weight="1"
+                    android:onClick="onClickBtAddCerveja"/>
+   <ImageButton
+                    android:id="@+id/btListaValor"
+                    android:src="@drawable/listvalor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android_weight="1"
+                    android:onClick="onClickBtListaValor"
+
+                    />
+    <ImageButton android:id="@+id/btListaCerveja"
+                    android:src="@drawable/listcerveja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android_weight="1"
+                    android:onClick="onClickBtListaCerveja"/>
+   <ImageButton android:id="@+id/btServidor"
+                    android:src="@drawable/server"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android_weight="1"
+                    android:onClick="onClickBtServidor"/>
+</LinearLayout>

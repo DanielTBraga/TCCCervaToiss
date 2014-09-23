@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    
+<item   android:id="@+id/abrirAddValor"
+        android:title="Cadastrar Valor"/>
+<item   android:id="@+id/abrirValor"
+        android:title="Valor" />
+<item   android:id="@+id/abrirCerveja"
+        android:title="Cerveja" />
+<item   android:id="@+id/abrirServidor"
+        android:title="Sincronizar com Servidor" />
+</menu>

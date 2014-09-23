@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/addCerveja"
+    android:title="Adicionar" />
+    <item android:id="@+id/editCerveja"
+    android:title="Editar" />
+    <item android:id="@+id/delCerveja"
+    android:title="Excluir" />
+</menu>
