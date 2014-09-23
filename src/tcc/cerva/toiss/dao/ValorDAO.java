@@ -25,7 +25,7 @@ public class ValorDAO {
     public ValorDAO(Context context) {
         this.context = context;
     }
-
+   
     public List<Valor> listaTodos() {
         List<Valor> listaVal = new ArrayList<Valor>();
         ConexaoBanco bd = new ConexaoBanco(this.context);

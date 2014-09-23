@@ -46,7 +46,7 @@ public class CervejaDAO {
         ConexaoBanco bd = new ConexaoBanco(this.context);
         SQLiteDatabase conn = bd.getWritableDatabase();
         ContentValues valores = new ContentValues(1);
-        valores.put("valor", cerv.getDescricao());
+        valores.put("descricao", cerv.getDescricao());
         conn.insert("cerveja", null, valores);
         conn.close();
     }
