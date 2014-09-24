@@ -44,7 +44,7 @@ public class CervaToiss extends Activity {
      *
      * */
     public void onClickBtListaValor(View v) {
-        Intent minhaAcao = new Intent(this, ListaCerveja.class);
+        Intent minhaAcao = new Intent(this, ListaValor.class);
         startActivity(minhaAcao);
     }
     

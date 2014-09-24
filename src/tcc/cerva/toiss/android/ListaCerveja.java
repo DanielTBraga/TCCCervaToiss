@@ -18,8 +18,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.List;
-import tcc.cerva.toiss.bean.Valor;
-import tcc.cerva.toiss.dao.ValorDAO;
+import tcc.cerva.toiss.bean.Cerveja;
+import tcc.cerva.toiss.dao.CervejaDAO;
 
 /**
  *
@@ -53,21 +53,25 @@ public class ListaCerveja extends ListActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menulistaval, menu);
+        inflater.inflate(R.menu.menulistacerv, menu);
         return true;
     }
 
-    /*
+     /*
      *
-     * Opções do menu
+     * Opções do Menu
      *
      * */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.addValor:
+            case R.id.addCerveja:
                 Intent i1 = new Intent(this, AddCerveja.class);
                 startActivityForResult(i1, 0);
+                return true;
+            case R.id.editCerveja:
+                return true;
+            case R.id.delCerveja:
                 return true;
             default:
                 return super.onContextItemSelected(item);
@@ -80,13 +84,13 @@ public class ListaCerveja extends ListActivity {
     }
     
     /*
-     *
-     * Preenche lista com todas as Despesas
-     *
+     * 
+     * Metodo utilizado para Listar todas as Categorias
+     * 
      * */
     private void atualiza() {
-        ValorDAO valDAO = new ValorDAO(this);
-        List<Valor> lista = valDAO.listaTodos();
-        setListAdapter(new ArrayAdapter(this, R.layout.listavalor, lista));
+        CervejaDAO cervDAO = new CervejaDAO(this);
+        List<Cerveja> lista = cervDAO.listaTodos();
+        setListAdapter(new ArrayAdapter(this, R.layout.listacerveja, lista));
     }
 }
